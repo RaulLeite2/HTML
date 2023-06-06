@@ -1,17 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste</title>
+    <title>Caixa de Entrada Numérica</title>
 </head>
-<body style="background-color: black;">
-    <p style="text-align: center; color: white;">Um Site da Net</p>
-    <div style="text-align: center;">
-        <p style="color: aliceblue;"> Eula é uma personagem de genshim um jogo que eu odeio</p>
-        <img style="width: 500px;" src="https://images4.alphacoders.com/122/1221871.jpg" alt="">
-        <video src="https://www.youtube.com/watch?v=AY6Qs-razY0&list=RDMMAY6Qs-razY0&start_radio=1"></video>
-    </div>
+<body style="color: aliceblue;">
+    <h1>Caixa de Entrada Numérica</h1>
+
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" name="idade">
+
+    <button onclick="verificarIdade()">Verificar</button>
+    <h6>
+        <div>
+            <p style="color: aliceblue;">9712</p>
+        </div>
+    </h6>
+
+    <script>
+        function verificarIdade() {
+            var idade = document.getElementById("idade").value;
+            
+            if (idade >= 296330141971242256) {
+                alert("Parabens Lucca agora acesse esse site(servidor do discord) https://discord.gg/uyHwwwXc");
+            } else {
+                alert("Você é menor de idade.");
+            }
+        }
+    </script>
 </body>
 </html>
